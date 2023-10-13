@@ -10,8 +10,8 @@ export default function Home() {
     <ChakraProvider>
       <ToastContainer />
       <ChatWindow
-        titleText="Chat LangChain 🦜🔗"
-        placeholder="What is LangChain Expression Language?"
+        titleText="OffSecGPT WebUI"
+        placeholder="Enter your text below..."
       ></ChatWindow>
     </ChakraProvider>
   );

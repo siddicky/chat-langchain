@@ -137,7 +137,10 @@ export function ChatWindow(props: {
 
             setMessages((prevMessages) => {
               let newMessages = [...prevMessages];
-              if (messageIndex === null || newMessages[messageIndex] === undefined) {
+              if (
+                messageIndex === null ||
+                newMessages[messageIndex] === undefined
+              ) {
                 messageIndex = newMessages.length;
                 newMessages.push({
                   id: Math.random().toString(),
@@ -176,7 +179,7 @@ export function ChatWindow(props: {
             {titleText}
           </Heading>
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
-            We appreciate feedback!
+            PEN-100 Course
           </Heading>
         </Flex>
       )}
@@ -206,7 +209,7 @@ export function ChatWindow(props: {
           maxRows={5}
           rounded={"full"}
           marginRight={"56px"}
-          placeholder="What is LangChain Expression Language?"
+          placeholder="Ask a question to get started..."
           textColor={"white"}
           borderColor={"rgb(58, 58, 61)"}
           onChange={(e) => setInput(e.target.value)}

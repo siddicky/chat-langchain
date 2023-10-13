@@ -16,7 +16,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
   return (
     <div className="rounded flex flex-col items-center max-w-full md:p-8">
       <Heading fontSize="3xl" fontWeight={"medium"} mb={1} color={"white"}>
-        Chat LangChain 🦜🔗
+        <Link href="/">OffSecGPT Web</Link>
       </Heading>
       <Heading
         fontSize="xl"
@@ -26,9 +26,9 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
         marginTop={"10px"}
         textAlign={"center"}
       >
-        Ask me anything about LangChain&apos;s{" "}
+        Ask questions related to&apos;s{" "}
         <Link href="https://python.langchain.com/" color={"blue.200"}>
-          Python documentation!
+          PEN-100 Exercises
         </Link>
       </Heading>
       <Flex marginTop={"25px"} grow={1} maxWidth={"800px"} width={"100%"}>
@@ -48,7 +48,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              How do I use a RecursiveUrlLoader to load content from a page?
+              How do I create a python webscraper as specified in the course?
             </Heading>
           </CardHeader>
         </Card>
@@ -69,7 +69,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              What is LangChain Expression Language?
+              How to take notes for the course?
             </Heading>
           </CardHeader>
         </Card>
@@ -91,7 +91,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              What are some ways of doing retrieval augmented generation?
+              What is the best exercise to get started with?
             </Heading>
           </CardHeader>
         </Card>
@@ -112,7 +112,7 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
               color={"gray.200"}
               textAlign={"center"}
             >
-              How do I run a model locally?
+              How do I prepare for the PEN-100 Final assignments?
             </Heading>
           </CardHeader>
         </Card>
